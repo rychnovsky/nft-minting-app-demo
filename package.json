@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "dev": "yarn workspace @nftapp/frontend dev",
+    "chain": "yarn workspace @nftapp/hardhat chain",
+    "deploy:localhost": "yarn workspace @nftapp/hardhat deploy:localhost",
     "type-check": "yarn workspaces foreach --all run type-check",
     "lint:ts": "yarn workspaces foreach --all run lint:ts",
     "format": "yarn workspace @nftapp/frontend format && yarn workspace @nftapp/hardhat format",
