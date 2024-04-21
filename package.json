@@ -1,0 +1,25 @@
+{
+  "name": "nftapp-base",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "type-check": "yarn workspaces foreach --all run type-check",
+    "lint:ts": "yarn workspaces foreach --all run lint:ts",
+    "format": "yarn workspace @nftapp/frontend format && yarn workspace @nftapp/hardhat format",
+    "precommit": "yarn workspaces foreach --all run precommit",
+    "prepare": "husky"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/hardhat"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "prettier": "^3.2.5"
+  },
+  "packageManager": "yarn@4.1.1"
+}
