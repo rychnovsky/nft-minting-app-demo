@@ -4,6 +4,9 @@ import { ThemeProvider as StyledThemeProvider } from 'styled-components'
 import GlobalStyle from 'src/styles/globalStyles'
 import { theme } from 'src/styles/styledTheme'
 import SeoHeadTags from 'src/components/Head/SeoHeadTags'
+import Web3Provider from 'src/context/Web3Provider'
+
+import '@rainbow-me/rainbowkit/styles.css'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
@@ -12,7 +15,9 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         pageTitle='Next.js starter'
         description='Starting Next.js template with Typescript, styled-components and code-quality toooling'
       />
-      <Component {...pageProps} />
+      <Web3Provider>
+        <Component {...pageProps} />
+      </Web3Provider>
       <GlobalStyle />
     </StyledThemeProvider>
   )

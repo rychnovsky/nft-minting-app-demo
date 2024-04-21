@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { ConnectButton } from '@rainbow-me/rainbowkit'
 
 import { routes } from 'src/constants/routes'
 
-import Container from '../Container'
 import * as S from './styled'
 
 const Header: React.FC = () => {
@@ -17,7 +17,7 @@ const Header: React.FC = () => {
 
   return (
     <S.Header>
-      <Container>
+      <S.StyledContainer>
         <nav>
           <S.Ul>
             {links.map((link) => (
@@ -27,7 +27,8 @@ const Header: React.FC = () => {
             ))}
           </S.Ul>
         </nav>
-      </Container>
+        <ConnectButton />
+      </S.StyledContainer>
     </S.Header>
   )
 }

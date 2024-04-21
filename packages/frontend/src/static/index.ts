@@ -1,5 +1,5 @@
 const publicImages = {
-  nextjs: '/static/images/nextjs.svg',
+  nft: '/static/images/nft.webp',
 }
 
 export { publicImages }

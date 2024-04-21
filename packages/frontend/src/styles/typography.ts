@@ -1,3 +1,3 @@
 export const fontFamily = {
-  primary: "'-apple-system'",
+  primary: "Montserrat, '-apple-system'",
 }

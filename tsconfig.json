@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": "\u0000",
+    "paths": {
+      "@nftapp/hardhat": ["../../hardhat/src"],
+      "@nftapp/hardhat/*": ["../../hardhat/src/*"]
+    }
+  }
+}

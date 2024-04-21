@@ -2,9 +2,10 @@ import styled, { css } from 'styled-components'
 
 // Heading 1
 export const H1Styles = css`
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: normal;
   letter-spacing: 0.025rem;
+  font-weight: bold;
 `
 
 export const H1 = styled.h1`
@@ -45,7 +46,7 @@ interface IPProps {
   variant?: 'p2' | 'p3'
 }
 export const P1Styles = css`
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 2.2rem;
   letter-spacing: 0.02rem;
 `

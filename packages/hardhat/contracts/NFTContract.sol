@@ -13,7 +13,7 @@ contract NFTContract is ERC721, ERC721Enumerable {
         return 'https://d/';
     }
 
-    function safeMint(address to) public {
+    function mint(address to) public {
         uint256 tokenId = totalSupply();
         _safeMint(to, tokenId);
     }
