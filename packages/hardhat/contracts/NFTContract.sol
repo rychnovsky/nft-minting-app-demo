@@ -10,7 +10,11 @@ contract NFTContract is ERC721, ERC721Enumerable {
     constructor() ERC721('TallinTestNFT', 'TTN') {}
 
     function _baseURI() internal pure override returns (string memory) {
-        return 'https://d/';
+        return 'ipfs://xxx/';
+    }
+
+    function contractURI() public pure returns (string memory) {
+        return 'ipfs://xxx';
     }
 
     function mint(address to) public {

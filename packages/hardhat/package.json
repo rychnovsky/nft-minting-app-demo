@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "deploy:localhost": "npx hardhat run scripts/deploy.ts --network localhost",
+    "read:localhost": "npx hardhat run scripts/read.ts --network localhost",
     "chain": "npx hardhat node",
     "compile": "npx hardhat compile",
     "test": "npx hardhat test",
