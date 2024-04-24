@@ -31,7 +31,7 @@ describe('NFTContract', function () {
       expect(totalSupply).to.equal(0)
 
       // act
-      const action = await contract.safeMint(owner.address)
+      const action = await contract.mint(owner.address)
       expect(action).not.to.be.reverted
 
       // assert
